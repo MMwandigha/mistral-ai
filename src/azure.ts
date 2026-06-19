@@ -10,7 +10,7 @@ if (!key || !region) {
 
 const translate = async () => {
   const response = await fetch(
-    'https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&from=nya&to=en',
+    'https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&from=sw&to=en',
     {
       method: 'POST',
       headers: {
@@ -18,7 +18,7 @@ const translate = async () => {
         'Ocp-Apim-Subscription-Region': region!,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify([{ Text: 'Moni, muli bwanji?' }]),
+      body: JSON.stringify([{ Text: 'Katika nchiya kale ya Eldoria, ambapo anga ya likuwa ya nangana misitu, ya likumbatia siri kwa upepo, aliishi joka haitwae Zephyrus. Sio haina ya kuungua kila kitu, bali ya likuwa mpole, mwenye hekima, na macho kama nyota za zamani. Hatandege wa litulia wa lipopita' }]),
     }
   );
 
